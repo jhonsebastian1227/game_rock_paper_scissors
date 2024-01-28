@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var randomNumberIA = Math.floor((Math.random() * 4) + 1);
 
         document.getElementById("player").setAttribute("src", "./assets/images/rock.png");
-        document.getElementsByTagName
+        
         if(randomNumberIA == 1){
             document.getElementById("IA").setAttribute("src", "./assets/images/rock.png");
             changeColor("#FBF6EE");
@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("IA").setAttribute("src", "./assets/images/paper.png");
             countIA++;
             document.getElementById("countIA").innerHTML = "Player IA: " + countIA;
-            changeColor("black")
+            changeColor("black");
         }
         else if(randomNumberIA == 3){
             document.getElementById("IA").setAttribute("src", "./assets/images/scissors.png");
             countPlayer++;
             document.getElementById("countPlayer").innerHTML = "Player: " + countPlayer;
-            changeColor("#black")
+            changeColor("#black");
         }
     });
 
@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("IA").setAttribute("src", "./assets/images/scissors.png");
             countIA++;
             document.getElementById("countIA").innerHTML = "Player IA: " + countIA;
-            changeColor("black")
+            changeColor("black");
         }
         else if(randomNumberIA == 3){
             document.getElementById("IA").setAttribute("src", "./assets/images/rock.png");
             countPlayer++;
             document.getElementById("countPlayer").innerHTML = "Player: " + countPlayer;
-            changeColor("black")
+            changeColor("black");
         }
     });
 
@@ -70,13 +70,13 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("IA").setAttribute("src", "./assets/images/rock.png");
             countIA++;
             document.getElementById("countIA").innerHTML = "Player IA: " + countIA;
-            changeColor("black")
+            changeColor("black");
         }
         else if(randomNumberIA == 3){
             document.getElementById("IA").setAttribute("src", "./assets/images/paper.png");
             countPlayer++;
             document.getElementById("countPlayer").innerHTML = "Player: " + countPlayer;
-            changeColor("black")
+            changeColor("black");
         }
     });
 });
