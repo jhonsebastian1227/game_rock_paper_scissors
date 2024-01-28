@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("IA").setAttribute("src", "./assets/images/paper.png");
             countIA++;
             document.getElementById("countIA").innerHTML = "Player IA: " + countIA;
-            changeColor("black");
+            changeColor("#000");
         }
         else if(randomNumberIA == 3){
             document.getElementById("IA").setAttribute("src", "./assets/images/scissors.png");
             countPlayer++;
             document.getElementById("countPlayer").innerHTML = "Player: " + countPlayer;
-            changeColor("black");
+            changeColor("#000");
         }
     });
 
@@ -46,13 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("IA").setAttribute("src", "./assets/images/scissors.png");
             countIA++;
             document.getElementById("countIA").innerHTML = "Player IA: " + countIA;
-            changeColor("black");
+            changeColor("#000");
         }
         else if(randomNumberIA == 3){
             document.getElementById("IA").setAttribute("src", "./assets/images/rock.png");
             countPlayer++;
             document.getElementById("countPlayer").innerHTML = "Player: " + countPlayer;
-            changeColor("black");
+            changeColor("#000");
         }
     });
 
@@ -70,13 +70,13 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("IA").setAttribute("src", "./assets/images/rock.png");
             countIA++;
             document.getElementById("countIA").innerHTML = "Player IA: " + countIA;
-            changeColor("black");
+            changeColor("#000");
         }
         else if(randomNumberIA == 3){
             document.getElementById("IA").setAttribute("src", "./assets/images/paper.png");
             countPlayer++;
             document.getElementById("countPlayer").innerHTML = "Player: " + countPlayer;
-            changeColor("black");
+            changeColor("#000");
         }
     });
 });
