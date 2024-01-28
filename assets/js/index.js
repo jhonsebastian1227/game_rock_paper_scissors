@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("IA").setAttribute("src", "./assets/images/scissors.png");
             countPlayer++;
             document.getElementById("countPlayer").innerHTML = "Player: " + countPlayer;
-            changeColor("#black");
+            changeColor("black");
         }
     });
 
