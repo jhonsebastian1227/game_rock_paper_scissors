@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("countIA").innerHTML = "Player IA: " + countIA;
             changeColor("black")
         }
-        else{
+        else if(randomNumberIA == 3){
             document.getElementById("IA").setAttribute("src", "./assets/images/scissors.png");
             countPlayer++;
             document.getElementById("countPlayer").innerHTML = "Player: " + countPlayer;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("countIA").innerHTML = "Player IA: " + countIA;
             changeColor("black")
         }
-        else{
+        else if(randomNumberIA == 3){
             document.getElementById("IA").setAttribute("src", "./assets/images/rock.png");
             countPlayer++;
             document.getElementById("countPlayer").innerHTML = "Player: " + countPlayer;
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("countIA").innerHTML = "Player IA: " + countIA;
             changeColor("black")
         }
-        else{
+        else if(randomNumberIA == 3){
             document.getElementById("IA").setAttribute("src", "./assets/images/paper.png");
             countPlayer++;
             document.getElementById("countPlayer").innerHTML = "Player: " + countPlayer;
