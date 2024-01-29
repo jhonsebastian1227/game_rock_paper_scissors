@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Código que se ejecutará cuando el DOM esté completamente cargado
+
+
 // Variables de conteo para saber quien va ganando
 var countPlayer = 0;
 var countIA = 0;
@@ -91,3 +95,4 @@ function changeColor(color){
         element[i].style.color = color;
     }
 }
+});
