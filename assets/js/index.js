@@ -84,6 +84,7 @@ for(var i = 0; i < array.length; i++){
     });
 }
 
+// funcion para cambio de color de los h2
 function changeColor(color){
     element = document.getElementsByTagName("h2");
     for(var i = 0; i < element.length; i++){
