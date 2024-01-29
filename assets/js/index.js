@@ -89,5 +89,6 @@ function changeColor(color){
     for(var i = 0; i < element.length; i++){
         element[i].style.color = color;
     }
+    break;
 }
 
