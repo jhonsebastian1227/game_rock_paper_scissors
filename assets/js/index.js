@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    function changeAttribute(player, IA){
+    function changeAttribute(player, playerIA){
         document.getElementById("player").setAttribute("src", player);
-        document.getElementById("IA").setAttribute("src", IA);
+        document.getElementById("IA").setAttribute("src", playerIA);
     }
         
 
