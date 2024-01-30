@@ -15,21 +15,18 @@ for(var i = 0; i < array.length; i++){
         switch (this.innerHTML) {
             case "Rock":
                 if(randomNumberIA == 1){
-                    document.getElementById("player").setAttribute("src", "./assets/images/rock.png");
-                    document.getElementById("IA").setAttribute("src", "./assets/images/rock.png");
+                    changeAttribute("./assets/images/rock.png", "./assets/images/rock.png");
                     changeColor("#FBF6EE");
                 }
         
                 else if(randomNumberIA == 2){
-                    document.getElementById("player").setAttribute("src", "./assets/images/rock.png");
-                    document.getElementById("IA").setAttribute("src", "./assets/images/paper.png");
+                    changeAttribute("./assets/images/rock.png", "./assets/images/paper.png");
                     countIA++;
                     functionCountIA(countPlayer, countIA);
                 }
         
                 else if(randomNumberIA == 3){
-                    document.getElementById("player").setAttribute("src", "./assets/images/rock.png");
-                    document.getElementById("IA").setAttribute("src", "./assets/images/scissors.png");
+                    changeAttribute("./assets/images/rock.png", "./assets/images/scissors.png");
                     countPlayer++;
                     functionCountIA(countPlayer, countIA);
                 }
@@ -37,21 +34,18 @@ for(var i = 0; i < array.length; i++){
             
             case "Paper":
                 if(randomNumberIA == 1){
-                    document.getElementById("player").setAttribute("src", "./assets/images/paper.png");
-                    document.getElementById("IA").setAttribute("src", "./assets/images/paper.png");
+                    changeAttribute("./assets/images/paper.png", "./assets/images/paper.png");
                     changeColor("#FBF6EE");
                 }
         
                 else if(randomNumberIA == 2){
-                    document.getElementById("player").setAttribute("src", "./assets/images/paper.png");
-                    document.getElementById("IA").setAttribute("src", "./assets/images/scissors.png");
+                    changeAttribute("./assets/images/paper.png", "./assets/images/scissors.png");
                     countIA++;
                     functionCountIA(countPlayer, countIA);
                 }
         
                 else if(randomNumberIA == 3){
-                    document.getElementById("player").setAttribute("src", "./assets/images/paper.png");
-                    document.getElementById("IA").setAttribute("src", "./assets/images/rock.png");
+                    changeAttribute("./assets/images/paper.png", "./assets/images/rock.png");
                     countPlayer++;
                     functionCountIA(countPlayer, countIA);
                 }
@@ -59,21 +53,18 @@ for(var i = 0; i < array.length; i++){
             
             case "Scissors":
                 if(randomNumberIA == 1){
-                    document.getElementById("player").setAttribute("src", "./assets/images/scissors.png");
-                    document.getElementById("IA").setAttribute("src", "./assets/images/scissors.png");
+                    changeAttribute("./assets/images/scissors.png", "./assets/images/scissors.png");
                     changeColor("#FBF6EE");
                 }
         
                 else if(randomNumberIA == 2){
-                    document.getElementById("player").setAttribute("src", "./assets/images/scissors.png");
-                    document.getElementById("IA").setAttribute("src", "./assets/images/rock.png");
+                    changeAttribute("./assets/images/scissors.png", "./assets/images/rock.png");
                     countIA++;
                     functionCountIA(countPlayer, countIA);
                 }
         
                 else if(randomNumberIA == 3){
-                    document.getElementById("player").setAttribute("src", "./assets/images/scissors.png");
-                    document.getElementById("IA").setAttribute("src", "./assets/images/paper.png");
+                    changeAttribute("./assets/images/scissors.png", "./assets/images/paper.png");
                     countPlayer++;
                     functionCountIA(countPlayer, countIA);
                 }
@@ -85,6 +76,13 @@ for(var i = 0; i < array.length; i++){
     });
 }
 
+
+function changeAttribute(player, IA){
+    document.getElementById("player").setAttribute("src", player);
+    document.getElementById("IA").setAttribute("src", IA);
+}
+    
+
 function functionCountIA(valuePlayer, valueIA){
     document.getElementById("countIA").innerHTML = "Player IA: " + valueIA;
     document.getElementById("countPlayer").innerHTML = "Player: " + valuePlayer;
@@ -95,6 +93,5 @@ function changeColor(color){
     element = document.getElementsByTagName("h2");
     for(var i = 0; i < element.length; i++){
         element[i].style.color = color;
-        break;
     }
 }
