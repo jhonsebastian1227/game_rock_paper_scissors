@@ -76,6 +76,7 @@ button:active{
 
 footer{
     margin-top: 1rem;
+    height: auto;
 }
 
 @media (min-width: 319px) and (max-width: 480px){
